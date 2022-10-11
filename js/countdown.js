@@ -38,11 +38,11 @@ function timeToLaunch(){
     var diff = Math.abs(Math.floor(diff));  
 
     // Check number of days until target
-    days = Math.floor(diff/(24*60*60));
+    days = pad( parseInt(Math.floor(diff/(24*60*60))));
     sec = diff - days * 24*60*60;
 
     // Check number of hours until target
-    hrs = Math.floor(sec/(60*60));
+    hrs = pad( parseInt(Math.floor(sec/(60*60))));
     sec = sec - hrs * 60*60;
     
     // Check number of minutes until target
